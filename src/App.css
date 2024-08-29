@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.PCpage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-gap: 10px;
+}
+.card > img {
+  max-width: 100%;
+}
+.sidebar-toggle {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  z-index: 1000;
+  font-size: 24px;
+  color: white;
+  background-color: #343a40;
+  border-radius: 5px;
+}
+.side {
+  width: 15%;
+}
+.sidebar {
+  flex-shrink: 0;
+  height: 100vh;
+  background-color: #343a40;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  width: 100%;
+  overflow-x: hidden;
+}
+#ppg {
+  color: #adb5bd;
+}
+
+
+.sidebar .nav-item .nav-link {
+  color: #adb5bd;
+}
+
+.sidebar .nav-item .nav-link.active {
+  background-color: #495057;
+  color: #ffffff;
+}
+.nav-link{
+  padding: 0;
+}
+.nav-link:hover {
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.dashcont {
+  padding-top: 20px;
+  text-align: center;
+  button {
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    color: white;
+  }
+  button {
+    width: 80%;
+  }
+  #userbtn {
+    background-color: blue;
+  }
+  #pending {
+    background-color: rgb(68, 61, 130);
+  }
+  #ship {
+    background-color: chocolate;
+  }
+  #compltd {
+    background-color: blueviolet;
+  }
+  #ret {
+    background-color: rgba(205, 10, 10, 0.893);
+  }
+  button:hover {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
